@@ -119,6 +119,8 @@ apt_install python3 python3-dev python3-pip \
 	haveged pollinate unzip \
 	unattended-upgrades cron ntp fail2ban
 
+curl https://bootstrap.pypa.io/ez_setup.py | python
+
 # ### Add PHP7 PPA
 
 # Nextcloud requires PHP7, we will install the ppa from ubuntu php maintainer Ondřej Surý
