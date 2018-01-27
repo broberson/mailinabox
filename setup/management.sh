@@ -96,15 +96,9 @@ bootstrap_version=3.3.7
 bootstrap_url=https://github.com/twbs/bootstrap/releases/download/v$bootstrap_version/bootstrap-$bootstrap_version-dist.zip
 
 # Get Bootstrap
-<<<<<<< HEAD
 wget_verify $bootstrap_url e6b1000b94e835ffd37f4c6dcbdad43f4b48a02a /tmp/bootstrap.zip || exit 1
 unzip -q /tmp/bootstrap.zip -d /usr/local/lib/mailinabox/vendor/assets
 mv /usr/local/lib/mailinabox/vendor/assets/bootstrap-$bootstrap_version-dist /usr/local/lib/mailinabox/vendor/assets/bootstrap
-=======
-wget_verify $bootstrap_url e6b1000b94e835ffd37f4c6dcbdad43f4b48a02a /tmp/bootstrap.zip
-unzip -q /tmp/bootstrap.zip -d $assets_dir
-mv $assets_dir/bootstrap-$bootstrap_version-dist $assets_dir/bootstrap
->>>>>>> install Python 3 packages in a virtualenv
 rm -f /tmp/bootstrap.zip
 
 # Create an init script to start the management daemon and keep it
